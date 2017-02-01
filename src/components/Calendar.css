@@ -1,0 +1,82 @@
+.calendar--wrapper {
+  padding: 3%;
+}
+
+.calendar__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__weeknames {
+  width: 100%;
+  display: flex;
+}
+
+.calendar__weeknames > div {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar__days .calendar__day {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.calendar__day--circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__days .haveSchedules {
+  position: relative;
+}
+
+.calendar__days .haveSchedules:not(.outOfMonth):after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.calendar__day--circle:not(.outOfMonth) {
+  cursor: pointer;
+}
+.calendar__day--circle.selectedDate {
+  background-color: #ccc;
+}
+
+.calendar__day--circle.outOfMonth {
+  color: #ccc;
+}
+
+.calendar__day--circle.currentDay {
+  background-color: #FBBD08;
+  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+  color: #fff;
+}
+
+.calendar__navs.compact.ui {
+  background-color: transparent;
+  border: none;
+}

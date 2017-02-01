@@ -1,0 +1,47 @@
+.schedule-container {
+  padding: 3%;
+}
+.schedule__header {
+  display: flex;
+  align-items: center;
+}
+
+.schedule__header-title {
+  margin: 0 auto 0 0;
+}
+
+.schedule-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.schedule__list {
+  margin-top: 20px;
+}
+
+.item__schedule-edit {
+  margin-bottom: 20px;
+}
+
+.schedule-edit {
+  display: flex;
+  align-items: center;
+}
+
+.schedule-edit__actions {
+  margin-left: auto;
+}
+
+.schedule-edit__text {
+  margin: 0
+}
+
+.schedule-edit__participant {
+  display: inline-block;
+  border-radius: 7px;
+  background-color: #aaa;
+  padding: 1px 15px;
+  color: #fff;
+  margin-top: 8px;
+}

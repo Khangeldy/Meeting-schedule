@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ui.button.g-yellow-button {
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+.ui.button.g-float-right {
+  margin-left: auto;
+}
+
+.ui.icon.button.g-icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/*.ui.icon.button.g-icon-button:hover {
+  background: #aaa;
+}*/

@@ -1,0 +1,115 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
+}
+
+.content--left, .content--right {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .content--left {
+    width: 250px;
+  }
+
+  .content--right {
+    flex: 1;
+  }
+}
+
+.ui.vertical.menu.cp-sidebar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #45496b;
+  border-radius: 0;
+}
+
+.sidebar__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.sidebar__account_button {
+  margin-top: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar__avatar {
+  width: 80px;
+}
+
+.sidebar__link {
+  width: 100%;
+  padding: 5px 15px;
+  text-align: left;
+  color: #fafafb;
+  line-height: 30px;
+}
+
+.ui.label.sidebar__label {
+  margin-left: 10px;
+}
+
+.sidebar__link:hover {
+  color: #fafafb;
+  background-color: rgba(255,255,255, .4);
+}
+
+.content--right__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+.crc__left, .crc__right {
+  width: 100%;
+  height: 100%;
+}
+
+.crc__left {
+  order: 1;
+}
+
+.crc__right {
+  order: 0;
+}
+
+hr.divider {
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .content--right__content {
+    flex-direction: row;
+  }
+  .crc__left, .crc__right {
+    width: 50%;
+    height: 100%;
+  }
+  .crc__left {
+    order: 0;
+  }
+  .crc__right {
+    order: 1;
+  }
+}
